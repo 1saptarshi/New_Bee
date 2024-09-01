@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <style>.contact-info {
+        background-color: #FF4500;
+        }
+ </style>
+</head>
+<body class="bg-creamy-white text-black transition-colors duration-500 ">
+<header class="floating-navbar">
+    <!-- Floating Navbar with Theme Toggle -->
+    <nav class=" hidden md:flex justify-between space-x-4 ">
+        <img src="boy.png" alt="Brand Logo" class="logo">
+        <a href="#home" class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-house"></i> <p>home</p> </a>
+        <a href="#feed" class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-rss"></i> <p>Feed</p> </a>
+        <a href="#collab"class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-handshake"></i> <p>Collab</p></a>
+        <a href="#Store"class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-store"></i><p>Store</p></a>
+        <a href="#Gallery"class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-panorama"></i><p>Gallery</p></a>
+        <a href="#Connect"class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "> <i class="fa-brands fa-ubuntu"></i><p>Connect</p></a>
+        <a href="#service"class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-hand-holding-heart"></i><p>Service</p></a>
+        <a href="#Blog"class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-square-rss"></i><p>Blog</p></a>
+        <a href="#About"class="text-center  hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-address-card"></i><p>About</p></a>
+        <a href="#Contact"class="text-center   hover:bg-gray-900 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "><i class="fa-solid fa-message"></i><p>Contact</p></a>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="ml-4">
+            <i id="theme-icon" class="fas fa-sun text-white"></i><p></p></button>
+    </nav>
+     
+    <button 
+    class="md:hidden text-black contact-info hover:text-white px-2 py-3 rounded-full shadow-md focus:outline-none focus:ring-2  focus:ring-offset-2 "
+                id="menu-button">
+                <i class="fas fa-bars"></i>
+    </button>
+    <nav id="mobile-menu" class="md:hidden  p-4 shadow-lg space-y-2 rounded-lg">
+        <a href="#home" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-house"></i> <span>Home</span>
+        </a>
+        <a href="#feed" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-rss"></i> <span>Feed</span>
+        </a>
+        <a href="#collab" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-handshake"></i> <span>Collab</span>
+        </a>
+        <a href="#Store" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-store"></i> <span>Store</span>
+        </a>
+        <a href="#Gallery" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-panorama"></i> <span>Gallery</span>
+        </a>
+        <a href="#Connect" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-brands fa-ubuntu"></i> <span>Connect</span>
+        </a>
+        <a href="#service" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-hand-holding-heart"></i> <span>Service</span>
+        </a>
+        <a href="#Blog" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-square-rss"></i> <span>Blog</span>
+        </a>
+        <a href="#About" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-address-card"></i> <span>About</span>
+        </a>
+        <a href="#Contact" class="block contact-info text-white px-4 py-3 rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i class="fa-solid fa-message"></i> <span>Contact</span>
+        </a>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="  block contact-info text-white px-4 py-3 rounded-lg shadow-md hover: focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <i id="theme-icon" class="fas fa-sun"></i><span>Theme</span>
+        </button>
+    </nav>
+    
+
+</header>
+    <!-- Sections -->
+    <section id="home" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Affiliates Marketing</h2>
+        <p>Promote products and services through affiliate partnerships.</p>
+    </section>
+
+    <section id="feed" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Content/Product</h2>
+        <p>Showcase your content and products in the best light.</p>
+    </section>
+
+    <section id="collab" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Collaboration</h2>
+        <p>Collaborate with others to create something amazing.</p>
+    </section>
+
+    <section id="Store" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Marketing/Promotion</h2>
+        <p>Promote your brand and products with targeted marketing.</p>
+    </section>
+
+    <section id="Gallery" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Donation</h2>
+        <p>Support causes you care about with donations.</p>
+    </section>
+
+    <section id="Connect" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Gallery</h2>
+        <p>Explore our gallery of work and achievements.</p>
+    </section>
+
+    <section id="service" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Service</h2>
+        <p>Learn more about the services we offer.</p>
+    </section>
+    <section id="Blog" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">blog</h2>
+        <p>Learn more about the services we offer.</p>
+    </section>
+    <section id="About" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation">Connect</h2>
+        <p>Get in touch with us through various platforms.</p>
+    </section>
+
+    <section id="Contact" class="section scroll-effect">
+        <h2 class="section-title hover-zoom click-animation"></h2>
+        <div class="flex flex-col md:flex-row bg-white  shadow-lg  w-full max-w-4xl">
+            <!-- Contact Info Section -->
+            <div class="contact-info text-white p-8 flex flex-col justify-between w-full md:w-1/3">
+                <div  >
+                    <h2 class="text-2xl text-white font-bold mb-4">Contact Us</h2>
+                    <p class="mb-4">TECHNO MAIN SALTLAKE<br> KOLKATA</p>
+                    <p class="mb-4">saptarshichowdhury860@gmail.com<br>saltlake sector-v</p>
+                    <p class="mb-4">+91 0000000000</p>
+                </div>
+                <div class="flex space-x-4 mt-4 ">
+                    <a href="https://www.linkedin.com/in/saptarshi-chowdhury-ba1972234/" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/1saptarshi" class="text-white"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/saptarshi177" class="text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Contact Form Section -->
+            <div class="p-8 w-full md:w-2/3">
+                <h2 class="text-2xl text-gray-600 font-bold mb-4">Get in Touch</h2>
+                <p class="text-gray-600 mb-8">Feel free to drop us a line below!</p>
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <input type="text" id="name" name="name" placeholder="Your name"
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" name="email" placeholder="Your email"
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500">
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" name="message" placeholder="Type your message here..."
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="contact-info hover:bg-red-800 text-white px-6 py-3 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   <script src="script.js"></script>
+   <script>
+    document.getElementById('menu-button').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+    
+</body>
+</html>

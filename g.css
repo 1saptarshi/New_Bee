@@ -1,0 +1,163 @@
+  /* Add the rest of your styles here */
+  .contact-info {
+    background-color: #FF4500;
+}
+
+/* Colors */
+:root {
+    --creamy-white: #FFF8E7;
+    --deep-orange: #FF4500;
+    --black: #000000;
+    --gray: #DCDCDC;
+    --dark-bg: #121212;
+    --dark-text: #e0e0e0;
+}
+
+/* Default Light Theme */
+body {
+    background-color: var(--creamy-white);
+    color: var(--black);
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.floating-navbar {
+    position: fixed;
+    top: 7px;
+    right: 50px;
+    background-color: var(--deep-orange);
+    padding: 7px 7px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-navbar .logo {
+    height: 50px;
+    margin-right: auto;
+}
+
+.floating-navbar a {
+    color: var(--creamy-white);
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.floating-navbar a:hover {
+    color: var(--gray);
+}
+
+.floating-navbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode .floating-navbar {
+    background-color: var(--black);
+}
+
+body.dark-mode .floating-navbar a {
+    color: var(--dark-text);
+}
+
+body.dark-mode .floating-navbar a:hover {
+    color: var(--deep-orange);
+}
+
+body.dark-mode #theme-icon {
+    color: var(--deep-orange);
+}
+
+/* Sections Styling */
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--deep-orange);
+    transition: color 0.3s ease;
+}
+
+/* Scroll Effects */
+.scroll-effect {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-effect.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover and Click Effects */
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+.click-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.click-animation::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 69, 0, 0.3); /* Deep Orange */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.click-animation:active::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@media (max-width: 768px) {
+    .floating-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .floating-navbar .menu-button {
+        display: inline-block;
+    }
+
+    .floating-navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .floating-navbar .nav-links.show {
+        display: flex;
+    }
+}
